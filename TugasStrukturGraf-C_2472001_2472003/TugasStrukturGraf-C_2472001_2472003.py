@@ -1,6 +1,14 @@
 # NRP - Nama Anggota 1 : 2472001 - Aurellia Yemima Tomy
 # NRP - Nama Anggota 2 : 2472003 - Maria Mayang Prihariyanti Panduwardani 
 
+# def Breadth First Search (BFS)
+# G : matriks ukuran n x n
+# nodes : List yang berisi nama atau label dari setiap simpul (node)
+# u : indeks awal untuk memulai pencarian 
+# n : total simpul dalam graf 
+# visited : list untuk mencatat simpul yang sudah dikunjungi (boolean)
+# Q : var untuk menyimpan urutan simpul yang akan dikunjungi
+# w : variabel untuk mengambil elemen pertama dari antrian
 def BFS(G, nodes, u, n):
     visited = [False] * n
     Q = []
@@ -53,7 +61,7 @@ def main():
     print("KASUS UJI 2 (GRAF HURUF KECIL)")
     print("-- menampilkan traversal dengan bfs --")
     BFS(G2, nodes2, 0, len(nodes2))
-    
+
 if __name__ == "__main__":
     main()
 
